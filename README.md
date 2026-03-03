@@ -52,9 +52,9 @@ py -m pip install pygame
    python main.py
    ```
    - 在 macOS 或 Linux 環境，可能需要改用：
-     ```bash
+   ```bash
      python3 main.py
-     ```
+   ```
 3. 直接雙擊main.py啟動遊戲
 ---
 ## ⚠️ 常見問題排查
@@ -80,5 +80,6 @@ py -m pip install pygame
 - 踩死一隻敵人：+200 分
 
 祝您遊玩愉快，peko！
+
 
 
