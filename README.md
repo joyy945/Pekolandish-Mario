@@ -15,22 +15,53 @@
 
 這個遊戲是使用 Python 撰寫的，因此需要您的電腦安裝有 Python 環境。
 
-### 步驟 1：安裝 Python
-如果您的電腦還沒有 Python，請先到 [Python 官方網站](https://www.python.org/downloads/) 下載並安裝。建議安裝 Python 3.8 或更新的版本。
-*(注意：Windows 用戶在安裝時，請務必勾選「Add Python to PATH」選項)*
+好的！這裡我幫你整理一份 **README 範本**，你可以直接放到 GitHub 專案裡，讓其他人快速了解如何安裝與啟動遊戲：
 
+---
+
+# Pekolandish Mario
+
+一個基於 **Pygame** 的學習專案，讓玩家體驗簡單的冒險遊戲。
+
+---
+
+## 📦 安裝與設定
+
+### 步驟 1：安裝 Python
+- 如果電腦尚未安裝 Python，請先前往 [Python 官方網站](https://www.python.org/downloads/) 下載並安裝。  
+- 建議安裝 **Python 3.8 以上版本**。  
+- **Windows 使用者注意**：安裝時務必勾選 **「Add Python to PATH」**，以確保能在命令提示字元中直接使用 `python`。
+---
 ### 步驟 2：安裝必要模組 (Pygame)
-打開終端機 (Terminal) 或 命令提示字元 (cmd / PowerShell)，並輸入以下指令來安裝遊戲所需的 Pygame 引擎庫：
+打開 **命令提示字元 (cmd)** 或 **PowerShell**，輸入以下指令安裝 Pygame 引擎庫：
 ```bash
 pip install pygame
 ```
-
-### 步驟 3：啟動遊戲
-在終端機中，使用 `cd` 指令進入到解壓縮後的遊戲資料夾裡面 (擁有 `main.py` 的目錄)，然後輸入以下指令執行遊戲：
+如果 `pip` 無法使用，可以改用：
 ```bash
-python main.py
+py -m pip install pygame
 ```
-*(如果 `python` 無法執行，在部分環境或 Mac 上可能需要輸入 `python3 main.py`)*
+---
+### 步驟 3：啟動遊戲
+1. 使用 `cd` 指令進入遊戲資料夾（解壓縮後包含 `main.py` 的目錄），例如：
+   ```bash
+   cd C:\Users\你的使用者名稱\Downloads\Pekolandish-Mario-main
+   ```
+2. 在該資料夾中輸入以下指令啟動遊戲：
+   ```bash
+   python main.py
+   ```
+   - 在 macOS 或 Linux 環境，可能需要改用：
+     ```bash
+     python3 main.py
+     ```
+---
+## ⚠️ 常見問題排查
+- **`pip` 無法使用** → 改用 `py -m pip install <套件>`  
+- **`python` 指令無法執行** → 在 macOS/Linux 改用 `python3`  
+- **遊戲啟動後沒有畫面** → 確認 `main.py` 是否有呼叫 `pygame.display.set_mode()`，並且資源檔案（圖片、音效）在正確的資料夾結構中  
+- **程式閃退** → 請在命令提示字元中執行，不要直接雙擊 `main.py`，以便看到錯誤訊息  
+---
 
 ## 遊戲操作說明
 
@@ -49,3 +80,4 @@ python main.py
 - 踩死一隻敵人：+200 分
 
 祝您遊玩愉快，peko！
+
