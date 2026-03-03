@@ -55,10 +55,10 @@ py -m pip install pygame
      ```bash
      python3 main.py
      ```
+3. 直接雙擊main.py啟動遊戲
 ---
 ## ⚠️ 常見問題排查
 - **`pip` 無法使用** → 改用 `py -m pip install <套件>`  
-- **`python` 指令無法執行** → 在 macOS/Linux 改用 `python3`  
 - **遊戲啟動後沒有畫面** → 確認 `main.py` 是否有呼叫 `pygame.display.set_mode()`，並且資源檔案（圖片、音效）在正確的資料夾結構中  
 - **程式閃退** → 請在命令提示字元中執行，不要直接雙擊 `main.py`，以便看到錯誤訊息  
 ---
@@ -80,4 +80,5 @@ py -m pip install pygame
 - 踩死一隻敵人：+200 分
 
 祝您遊玩愉快，peko！
+
 
