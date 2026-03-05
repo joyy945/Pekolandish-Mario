@@ -41,6 +41,10 @@ pip install pygame
 ```bash
 py -m pip install pygame
 ```
+如碰上Python版本問題可試安裝
+```bash
+pip install pygame-ce
+```
 ---
 ### 步驟 3：啟動遊戲
 1. 使用 `cd` 指令進入遊戲資料夾（解壓縮後包含 `main.py` 的目錄），例如：
@@ -80,6 +84,7 @@ py -m pip install pygame
 - 踩死一隻敵人：+200 分
 
 祝您遊玩愉快，peko！
+
 
 
 
